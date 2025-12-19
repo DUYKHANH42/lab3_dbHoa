@@ -1,0 +1,132 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="01.master.cs" Inherits="lab3_dbHoa._01" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <style>
+        .auto-style1 {
+            border-style: solid;
+            border-width: 2px;
+            outline-color: blue;
+            text-align: center;
+            justify-items: center;
+            width: 600px;
+        }
+
+        .auto-style5 {
+            text-align: start;
+        }
+
+        .auto-style7 {
+            height: 30px;
+            text-align: left;
+        }
+
+        .panel2 {
+            width: 300px;
+            margin: auto;
+            padding: 10px 10px;
+        }
+
+        .panel3 {
+            width: 800px;
+            margin: auto;
+            padding: 10px 10px;
+        }
+
+        .panel4 {
+            width: 1000px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="XemHoa.aspx">
+                    <img src="imgs/logo.jpeg"
+                        class="d-inline-block align-middle"
+                        width="180"
+                        alt="shop hoa Flowercorner.vn">
+                </a>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="XemHoa.aspx">Xem Hoa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="TraCuu.aspx">Tra Cứu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ThemHoa.aspx">Thêm Hoa</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main class="">
+            <asp:ContentPlaceHolder ID="NoiDung" runat="server">
+            </asp:ContentPlaceHolder>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <div class="container-fluid border py-2 px-2" style="background-color: #fff0d7af;">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img class="mb-3 lozad" src="imgs/logo.jpeg" width="255" height="53" alt="shop hoa Flowercorner.vn" title="shop hoa Flowercorner.vn">
+                        Hotline: 1900 633 045 - 0865 160 360
+          Email: sales@flowercorner.vn
+          <div class="row mt-3 mb-3">
+              <div class="col-md-5">
+                  <img class="lozad" src="imgs/qr.jpeg" width="92" height="114" alt="quét để tải app FlowerCorner" title="quét để tải app FlowerCorner">
+              </div>
+          </div>
+                        <div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5 class="mb-3">CHĂM SÓC KHÁCH HÀNG</h5>
+                        <div>
+                            <p><a href="/thong-tin/gioi-thieu" rel="nofollow">Giới Thiệu</a> </p>
+                            <p><a href="/thong-tin/lien-he" rel="nofollow">Liên Hệ</a> </p>
+                            <p><a href="/thong-tin/chinh-sach-van-chuyen" rel="nofollow">Chính Sách Vận Chuyển</a> </p>
+                            <p><a href="/thong-tin/cau-hoi-thuong-gap" rel="nofollow">Câu Hỏi Thường Gặp</a> </p>
+                            <p><a href="/thong-tin/hinh-thuc-thanh-toan" rel="nofollow">Hình Thức Thanh Toán</a> </p>
+                            <p><a href="/thong-tin/bao-mat-thong-tin" rel="nofollow">Bảo Mật Thông Tin</a> </p>
+                            <p><a href="/thong-tin/chinh-sach-doi-tra" rel="nofollow">Chính Sách Hoàn Tiền</a> </p>
+                            <p><a href="/thong-tin/khieu-nai" rel="nofollow">Xử Lý Khiếu Nại</a> </p>
+                            <p><a href="/thong-tin/tai-sao-nen-chon-flower-corner" rel="nofollow">Tại Sao Nên Chọn FlowerCorner.vn</a> </p>
+                            <p><a href="#" rel="follow">Blog</a> </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <h5 class="mb-3">THEO DÕI</h5>
+                        <div>
+                            <p><a href="#" rel="nofollow"><i class="fa-brands fa-facebook" aria-hidden="true"></i>Facebook</a> </p>
+                            <p><a href="#" rel="nofollow"><i class="fa-brands fa-twitter-square" aria-hidden="true"></i>Twitter</a> </p>
+                            <p><a href="#" rel="nofollow"><i class="fa-brands fa-instagram" aria-hidden="true"></i>Instagram</a> </p>
+                            <p><a href="#" rel="nofollow"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>Linkedin</a> </p>
+                            <p><a href="#" rel="nofollow"><i class="fa-brands fa-youtube" aria-hidden="true"></i>Youtube</a> </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <h5 class="mb-3">SHOP HOA FLOWERCORNER</h5>
+                        <p><b>Cửa hàng chính:</b>: <a href="#">142 Nguyễn Văn Cừ, Phường Cầu Ông Lãnh, TP.HCM</a></p>
+                        <br>
+
+                        <p><b>Cửa Hàng TP.HCM</b>: <a href="#">225/3 Nguyễn Đình Chiểu, Phường Bàn Cờ, TP.HCM</a></p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </form>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</html>
+
