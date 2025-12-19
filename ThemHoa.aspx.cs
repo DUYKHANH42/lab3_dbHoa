@@ -22,7 +22,7 @@ namespace lab3_dbHoa
                 string tenhoa = txtTenHoa.Text;
                 string maloai = ddlLoai.SelectedValue;
                 string gia = txtGia.Text;
-                string ngaycapnhat = txtNgayCapNhat.Text;
+                string ngaycapnhat = txtNgayCapNhat.SelectedDate.ToString();
                 string hinh = "";
                 if (HinhUpload.HasFile)
                 {

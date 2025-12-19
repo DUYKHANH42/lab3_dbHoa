@@ -43,7 +43,15 @@
             <tr>
                 <td class="auto-style5">Ngày cập nhật</td>
                 <td class="auto-style7">
-                    <asp:TextBox ID="txtNgayCapNhat" TextMode="Date" runat="server" Style="width: 80%; text-align: left"></asp:TextBox>
+                    <asp:Calendar ID="txtNgayCapNhat" runat="server" Style="width: 80%; text-align: left" BackColor="White" BorderColor="Black" BorderStyle="Solid" CellSpacing="1" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="250px" NextPrevFormat="ShortMonth" Width="330px">
+                        <DayHeaderStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" Height="8pt" />
+                        <DayStyle BackColor="#CCCCCC" />
+                        <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="White" />
+                        <OtherMonthDayStyle ForeColor="#999999" />
+                        <SelectedDayStyle BackColor="#333399" ForeColor="White" />
+                        <TitleStyle BackColor="#333399" BorderStyle="Solid" Font-Bold="True" Font-Size="12pt" ForeColor="White" Height="12pt" />
+                        <TodayDayStyle BackColor="#999999" ForeColor="White" />
+                    </asp:Calendar>
                 </td>
             </tr>
             <tr>
