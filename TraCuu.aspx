@@ -7,7 +7,7 @@
                 runat="server" ErrorMessage="Vui lòng nhập số" ControlToValidate="txtTu"
                 ForeColor="Red" ValidationExpression="^\d+(\.\d+)?$" Display="Dynamic">*
             </asp:RegularExpressionValidator>
-            <asp:CompareValidator ID="cvTu" runat="server" BackColor="White" ControlToCompare="txtTu" ControlToValidate="txtDen" Display="Dynamic" ErrorMessage="Giá từ phải nhỏ hơn giá đến" ForeColor="Red" Operator="GreaterThanEqual">*</asp:CompareValidator>
+            <asp:CompareValidator ID="cvTu" runat="server" BackColor="White" ControlToCompare="txtTu" ControlToValidate="txtDen" Display="Dynamic" ErrorMessage="Giá từ phải nhỏ hơn giá đến" ForeColor="Red" Operator="GreaterThanEqual" Type="Integer">*</asp:CompareValidator>
             <asp:TextBox ID="txtTu" runat="server" TextMode="Number">0</asp:TextBox>
             <asp:Label ID="Label1" runat="server" Text="đến "></asp:Label>  
             <asp:RegularExpressionValidator ID="revtxtDen"
