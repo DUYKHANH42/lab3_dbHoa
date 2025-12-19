@@ -26,8 +26,8 @@ namespace lab3_dbHoa
                 string hinh = "";
                 if (HinhUpload.HasFile)
                 {
-                    string folder = Server.MapPath("~/imgs/");
-                    string fileName = Path.GetFileName(HinhUpload.FileName);
+                        `1string folder = Server.MapPath("~/imgs/");
+                    string fileName = Guid.NewGuid().ToString() + ".jpg";
                     string path = Path.Combine(folder, fileName);
                     HinhUpload.SaveAs(path);
                     hinh = fileName;
