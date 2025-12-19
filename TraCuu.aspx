@@ -7,13 +7,14 @@
                 runat="server" ErrorMessage="Vui lòng nhập số" ControlToValidate="txtTu"
                 ForeColor="Red" ValidationExpression="^\d+(\.\d+)?$" Display="Dynamic">*
             </asp:RegularExpressionValidator>
-            <asp:TextBox ID="txtTu" runat="server"></asp:TextBox>
+            <asp:CompareValidator ID="cvTu" runat="server" BackColor="White" ControlToCompare="txtTu" ControlToValidate="txtDen" Display="Dynamic" ErrorMessage="Giá từ phải nhỏ hơn giá đến" ForeColor="Red" Operator="GreaterThanEqual">*</asp:CompareValidator>
+            <asp:TextBox ID="txtTu" runat="server" TextMode="Number">0</asp:TextBox>
             <asp:Label ID="Label1" runat="server" Text="đến "></asp:Label>  
             <asp:RegularExpressionValidator ID="revtxtDen"
                 runat="server" ErrorMessage="Vui lòng nhập số" ControlToValidate="txtDen"
                 ForeColor="Red" ValidationExpression="^\d+(\.\d+)?$" Display="Dynamic">*
             </asp:RegularExpressionValidator>
-             <asp:TextBox ID="txtDen" runat="server"></asp:TextBox>
+             <asp:TextBox ID="txtDen" runat="server" TextMode="Number">1000000</asp:TextBox>
             <asp:Button ID="btnTimKiem" runat="server" Text="Tìm Kiếm" CssClass="btn btn-primary" CausesValidation="true" OnClick="btnTimKiem_Click" />
             <asp:ValidationSummary ID="vsLoi" runat="server" DisplayMode="List" ForeColor="Red" style="text-align: center" />
         </asp:Panel>
